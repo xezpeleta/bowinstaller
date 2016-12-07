@@ -35,17 +35,20 @@ A command-line interface is also available, specially useful if you need to inst
 ### Usage
 
 ```
-bowinstaller.exe <options>
+Usage: bowinstaller.exe <options>
 
-Options:
-  -u, --user <username>        Default user
-  -p, --password <password>    Default user's password
-  -y, --assumeyes              Assume yes (the computer will be restarted!)
-  -r, --resume                 Resume installation after the reboot
-  -p, --postinstall            Post-installation script
-      --version                Print version information
-  -v, --verbose                Print debug information
-  -h, --help                   Print this help
+  -v, --verbose        (Default: False) Prints all messages to standard output.
+  -u, --user           Default user.
+  -p, --password       Default user's password
+  -y, --assumeyes      (Default: False) Assume yes. Attention: computer will be
+                       restarted
+  -n, --noreboot       (Default: False) Do not reboot automatically
+  -r, --resume         (Default: False) Resume installation after the reboot
+  -p, --postinstall    Batch script to run after the installation
+  -d, --uninstall      (Default: False) Uninstall Bash on Windows
+  --version            (Default: False) Prints version information to standard
+                       output
+  --help               Display this help screen.
 ```
 
 If no user is specified, `root` will be the default user (with no password).
