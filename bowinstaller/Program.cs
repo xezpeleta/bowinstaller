@@ -25,6 +25,8 @@ namespace bowinstaller
         const string appname = "bowinstaller";
         const string appversion = "0.1-preAlpha";
         const string appauthor = "Xabi Ezpeleta <xezpeleta@gmail.com>";
+        const int winvermajor = 10;
+        const int winverbuild = 14316; // 2016/April/06 Bash on Ubuntu
 
         class Options
         {
@@ -421,6 +423,15 @@ namespace bowinstaller
                 {
                     if (!options.AssumeYes)
                     {
+                        // Check Windows version > 10.0.14316
+                        if (Environment.OSVersion.Version.Major != 10 &&
+                            Environment.OSVersion.Version.Build < 14316)
+                        {
+                            Console.WriteLine("[ERROR] Windows 10 Build 14316 or higher required");
+                            Console.WriteLine("Update your Windows: https://www.microsoft.com/software-download/windows10");
+                            return 1;
+                        }
+
                         ConsoleKeyInfo cki;
                         Console.WriteLine("This will install Bash on Windows. Do you want to continue?");
                         Console.Write("Press <y> to continue, <n> to abort: ");
