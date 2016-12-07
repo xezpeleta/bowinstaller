@@ -44,7 +44,7 @@ Usage: bowinstaller.exe <options>
                        restarted
   -n, --noreboot       (Default: False) Do not reboot automatically
   -r, --resume         (Default: False) Resume installation after the reboot
-  -p, --postinstall    Batch script to run after the installation
+  -s, --postinstall    Batch script to run after the installation
   -d, --uninstall      (Default: False) Uninstall Bash on Windows
   --version            (Default: False) Prints version information to standard
                        output
