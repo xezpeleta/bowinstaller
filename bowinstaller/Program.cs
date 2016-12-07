@@ -250,9 +250,12 @@ namespace bowinstaller
                 }
             }
 
-            // Keep the console window open in debug mode.
-            Console.WriteLine("Press any key to exit.");
-            Console.ReadKey();
+            if (!options.AssumeYes)
+            {
+                // Keep the console window open
+                Console.WriteLine("Press any key to exit.");
+                Console.ReadKey();
+            }
 
             return 0;
         }
@@ -269,9 +272,6 @@ namespace bowinstaller
             if (!Utils.RunWinCmd("lxrun /install /y"))
             {
                 Console.WriteLine("ERROR: Cannot install Bash");
-                // Keep the console window open in debug mode.
-                Console.WriteLine("Press any key to exit.");
-                Console.ReadKey();
                 return 1;
             }
             else
@@ -342,9 +342,12 @@ namespace bowinstaller
             // Installation finished succesfully
             Console.WriteLine("Installation finished succesfully!");
 
-            // Keep the console window open in debug mode.
-            Console.WriteLine("Press any key to exit.");
-            Console.ReadKey();
+            if (!options.AssumeYes)
+            {
+                // Keep the console window open
+                Console.WriteLine("Press any key to exit.");
+                Console.ReadKey();
+            }
 
             return 0;
         }
