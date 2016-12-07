@@ -54,7 +54,7 @@ namespace bowinstaller
                 HelpText = "Resume installation after the reboot")]
             public bool Resume { get; set; }
 
-            [Option('p', "postinstall",
+            [Option('s', "postinstall",
                 HelpText = "Batch script to run after the installation")]
             public string PostInstall { get; set; }
 
