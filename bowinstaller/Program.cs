@@ -282,23 +282,23 @@ namespace bowinstaller
             // Create user
             if (options.User != null)
             {
-                if (!Utils.RunWinCmd("bash -c \"useradd" + options.User + " -s /bin/bash\""))
+                if (!Utils.RunWinCmd("bash -c \"useradd " + options.User + " -s /bin/bash\""))
                 {
-                    Console.WriteLine("ERROR: Cannot create user mynewuser");
+                    Console.WriteLine("ERROR: Cannot create user " + options.User);
                     return 1;
                 }
                 else
                 {
-                    Console.WriteLine("[OK] User mynewuser created");
+                    Console.WriteLine("[OK] User " + options.User + " created");
                 }
             }
 
             // Set password
             if (options.Password != null)
             {
-                if (!Utils.RunWinCmd("bash -c \"echo 'mynewuser:mypassword' | chpasswd\""))
+                if (!Utils.RunWinCmd("bash -c \"echo '" + options.User + ":" + options.Password + "' | chpasswd\""))
                 {
-                    Console.WriteLine("ERROR: Cannot set password to user mynewuser");
+                    Console.WriteLine("ERROR: Cannot set password to user " + options.User);
                     return 1;
                 }
                 else
@@ -310,14 +310,14 @@ namespace bowinstaller
             // Make 'user' the default user
             if (options.User != null)
             {
-                if (!Utils.RunWinCmd("lxrun /setdefaultuser mynewuser /y"))
+                if (!Utils.RunWinCmd("lxrun /setdefaultuser " + options.User + " /y"))
                 {
-                    Console.WriteLine("ERROR: Cannot make mynewuser default user");
+                    Console.WriteLine("ERROR: Cannot make " + options.User + " default user");
                     return 1;
                 }
                 else
                 {
-                    Console.WriteLine("[OK] Make mynewuser default user");
+                    Console.WriteLine("[OK] Make " + options.User + " default user");
                 }
             }
 
