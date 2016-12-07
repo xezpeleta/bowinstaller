@@ -282,7 +282,7 @@ namespace bowinstaller
             // Create user
             if (options.User != null)
             {
-                if (!Utils.RunWinCmd("bash -c \"useradd " + options.User + " -s /bin/bash\""))
+                if (!Utils.RunWinCmd("bash -c \"useradd " + options.User + " -G adm,cdrom,sudo,dip,plugdev -s /bin/bash\""))
                 {
                     Console.WriteLine("ERROR: Cannot create user " + options.User);
                     return 1;
