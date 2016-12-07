@@ -1,9 +1,0 @@
-c:\users\tknadmin\documents\visual studio 2015\Projects\bowinstaller\bowinstaller\bin\Debug\bowinstaller.exe.config
-c:\users\tknadmin\documents\visual studio 2015\Projects\bowinstaller\bowinstaller\bin\Debug\bowinstaller.exe
-c:\users\tknadmin\documents\visual studio 2015\Projects\bowinstaller\bowinstaller\bin\Debug\bowinstaller.pdb
-c:\users\tknadmin\documents\visual studio 2015\Projects\bowinstaller\bowinstaller\obj\Debug\bowinstaller.csprojResolveAssemblyReference.cache
-c:\users\tknadmin\documents\visual studio 2015\Projects\bowinstaller\bowinstaller\obj\Debug\bowinstaller.exe
-c:\users\tknadmin\documents\visual studio 2015\Projects\bowinstaller\bowinstaller\obj\Debug\bowinstaller.pdb
-c:\users\tknadmin\documents\visual studio 2015\Projects\bowinstaller\bowinstaller\bin\Debug\CommandLine.dll
-c:\users\tknadmin\documents\visual studio 2015\Projects\bowinstaller\bowinstaller\bin\Debug\CommandLine.xml
-C:\Users\tknadmin\Documents\Visual Studio 2015\Projects\bowinstaller\bowinstaller\bin\Debug\System.Management.Automation.dll

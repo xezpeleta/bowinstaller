@@ -1,8 +1,0 @@
-C:\Users\tknadmin\Documents\Visual Studio 2015\Projects\bowinstaller\bowinstaller\bin\Release\bowinstaller.exe.config
-C:\Users\tknadmin\Documents\Visual Studio 2015\Projects\bowinstaller\bowinstaller\bin\Release\bowinstaller.exe
-C:\Users\tknadmin\Documents\Visual Studio 2015\Projects\bowinstaller\bowinstaller\bin\Release\bowinstaller.pdb
-C:\Users\tknadmin\Documents\Visual Studio 2015\Projects\bowinstaller\bowinstaller\bin\Release\CommandLine.dll
-C:\Users\tknadmin\Documents\Visual Studio 2015\Projects\bowinstaller\bowinstaller\bin\Release\System.Management.Automation.dll
-C:\Users\tknadmin\Documents\Visual Studio 2015\Projects\bowinstaller\bowinstaller\bin\Release\CommandLine.xml
-C:\Users\tknadmin\Documents\Visual Studio 2015\Projects\bowinstaller\bowinstaller\obj\Release\bowinstaller.exe
-C:\Users\tknadmin\Documents\Visual Studio 2015\Projects\bowinstaller\bowinstaller\obj\Release\bowinstaller.pdb
