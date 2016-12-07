@@ -1,0 +1,9 @@
+C:\Users\tknadmin\Documents\Visual Studio 2015\Projects\bowinstaller\bowinstaller\bin\x64\Release\bowinstaller.exe.config
+C:\Users\tknadmin\Documents\Visual Studio 2015\Projects\bowinstaller\bowinstaller\bin\x64\Release\bowinstaller.exe
+C:\Users\tknadmin\Documents\Visual Studio 2015\Projects\bowinstaller\bowinstaller\bin\x64\Release\bowinstaller.pdb
+C:\Users\tknadmin\Documents\Visual Studio 2015\Projects\bowinstaller\bowinstaller\bin\x64\Release\CommandLine.dll
+C:\Users\tknadmin\Documents\Visual Studio 2015\Projects\bowinstaller\bowinstaller\bin\x64\Release\System.Management.Automation.dll
+C:\Users\tknadmin\Documents\Visual Studio 2015\Projects\bowinstaller\bowinstaller\bin\x64\Release\CommandLine.xml
+C:\Users\tknadmin\Documents\Visual Studio 2015\Projects\bowinstaller\bowinstaller\obj\x64\Release\bowinstaller.exe
+C:\Users\tknadmin\Documents\Visual Studio 2015\Projects\bowinstaller\bowinstaller\obj\x64\Release\bowinstaller.pdb
+C:\Users\tknadmin\Documents\Visual Studio 2015\Projects\bowinstaller\bowinstaller\obj\x64\Release\bowinstaller.csprojResolveAssemblyReference.cache
