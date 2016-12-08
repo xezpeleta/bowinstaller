@@ -74,16 +74,18 @@ bash -c "apt-get update && apt-get -y install apache2"
 You can use this feature to set up OpenSSH:
 
 ```bat
+<!-- : Begin batch script
+@echo off
 bash -c "apt-get -y remove openssh-server"
 bash -c "apt-get -y install openssh-server"
 bash -c "sed -i '/UsePrivilegeSeparation yes/c\UsePrivilegeSeparation no' /etc/ssh/sshd_config"
 bash -c "sed -i '/PasswordAuthentication no/c\PasswordAuthentication yes' /etc/ssh/sshd_config"
-REM Start OpenSSH server
-cscript //NoLogo //B startssh.vbs
-```
+cscript //nologo "%~f0?.wsf"
+exit /b
 
-startssh.vbs
-```vbs
-set ws=wscript.createobject("wscript.shell")
-ws.run "C:\Windows\System32\bash.exe -c 'sudo /usr/sbin/sshd -D'",0
+----- Begin wsf script --->
+<job><script language="VBScript">
+  set ws=wscript.createobject("wscript.shell")
+  ws.run "C:\Windows\System32\bash.exe -c 'sudo /usr/sbin/sshd -D'",0
+</script></job>
 ```
