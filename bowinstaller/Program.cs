@@ -18,7 +18,7 @@ namespace bowinstaller
     class Program
     {
         const string appname = "bowinstaller";
-        const string appversion = "0.1-preAlpha";
+        const string appversion = "0.1";
         const string appauthor = "Xabi Ezpeleta <xezpeleta@gmail.com>";
         const int winvermajor = 10;
         const int winverbuild = 14316; // 2016/April/06 Bash on Ubuntu
