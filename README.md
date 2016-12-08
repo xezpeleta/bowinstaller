@@ -60,5 +60,30 @@ If no user is specified, `root` will be the default user (with no password).
 bowinstaller.exe
 
 # Automated installation:
-bowinstaller.exe --user myuser --password mypassword --postinstall C:\myscript.bat
+bowinstaller.exe --user myuser --password mypassword --postinstall C:\postinstall.bat
+```
+
+#### Post-installation script
+
+For instance, if you want to install some application:
+
+```bat
+bash -c "apt-get update && apt-get -y install apache2"
+```
+
+You can use this feature to set up OpenSSH:
+
+```bat
+bash -c "apt-get -y remove openssh-server"
+bash -c "apt-get -y install openssh-server"
+bash -c "sed -i '/UsePrivilegeSeparation yes/c\UsePrivilegeSeparation no' /etc/ssh/sshd_config"
+bash -c "sed -i '/PasswordAuthentication no/c\PasswordAuthentication yes' /etc/ssh/sshd_config"
+REM Start OpenSSH server
+cscript //NoLogo //B startssh.vbs
+```
+
+startssh.vbs
+```vbs
+set ws=wscript.createobject("wscript.shell")
+ws.run "C:\Windows\System32\bash.exe -c 'sudo /usr/sbin/sshd -D'",0
 ```
