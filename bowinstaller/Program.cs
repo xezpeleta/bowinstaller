@@ -7,15 +7,10 @@
 
 
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using CommandLine;
 using System.Management.Automation;
 using System.Collections.ObjectModel;
-using System.Management.Automation.Runspaces;
-using System.Collections;
 using CommandLine.Text;
 
 namespace bowinstaller
