@@ -76,6 +76,7 @@ You can use this feature to set up OpenSSH:
 ```bat
 <!-- : Begin batch script
 @echo off
+bash -c "apt-get update"
 bash -c "apt-get -y remove openssh-server"
 bash -c "apt-get -y install openssh-server"
 bash -c "sed -i '/UsePrivilegeSeparation yes/c\UsePrivilegeSeparation no' /etc/ssh/sshd_config"
