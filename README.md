@@ -8,7 +8,7 @@ The installer will:
  * Enable developer mode (required)
  * Enable WSL feature
  * Install Bash on Windows
- * Optional: create a default user/password
+ * Optional: create a new user/password
  * Optional: run a post-installation script
 
 > Note: in order to enable WSL feature you will need to reboot your computer
